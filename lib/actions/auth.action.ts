@@ -115,7 +115,7 @@ export async function getCurrentUser(): Promise<User | null> {
   try {
     const decodedClaims = await auth.verifySessionCookie(sessionCookie, true);
     
-    // console.log("VERIFY OK — UID:", decodedClaims.uid);
+    console.log("VERIFY OK — UID:", decodedClaims.uid);
 
     // get user info from db
     const userRecord = await db
