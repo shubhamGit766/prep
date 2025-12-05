@@ -123,7 +123,7 @@ export async function getCurrentUser(): Promise<User | null> {
       .doc(decodedClaims.uid)
       .get();
 
-    console.log("USER RECORD EXISTS:", userRecord.exists);
+    // console.log("USER RECORD EXISTS:", userRecord.exists);
     
     if (!userRecord.exists) return null;
 

@@ -17,7 +17,7 @@ function initFirebaseAdmin() {
     });
   }
 
-  console.log("Private key length:", process.env.FIREBASE_PRIVATE_KEY?.length);
+  // console.log("Private key length:", process.env.FIREBASE_PRIVATE_KEY?.length);
 
 
   return {
